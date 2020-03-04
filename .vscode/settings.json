@@ -1,0 +1,65 @@
+{
+    // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    // Controls whether the editor should automatically format the line after typing.
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    // Render the actual characters on a line as opposed to color blocks.
+    "editor.minimap.renderCharacters": false,
+    // Controls fading out of unused code.
+    "editor.showUnused": true,
+    // Remove trailing auto inserted whitespace.
+    "editor.trimAutoWhitespace": true,
+    // When enabled, insert a final new line at the end of the file when saving it.
+    "files.insertFinalNewline": true,
+    // When enabled, will trim all new lines after the final new line at the end of the file when saving it.
+    "files.trimFinalNewlines": true,
+    // When enabled, will trim trailing whitespace when saving a file.
+    "files.trimTrailingWhitespace": false,
+    // Enable/disable default HTML formatter.
+    "html.format.enable": true,
+    // End with a newline.
+    "html.format.endWithNewline": false,
+    // Always show the ESlint status bar item.
+    "eslint.alwaysShowStatus": false,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#42b983",
+        "activityBar.foreground": "#ffffff",
+        "activityBar.inactiveForeground": "#94ffce"
+    },
+    "branchwarnings.protectedBranches": [
+        "master"
+    ],
+    "files.associations": {
+        "*.stylelintrc": "json"
+    },
+    "javascript.validate.enable": false,
+    "[javascript]": {
+        "editor.formatOnSave": false,
+    },
+    "[javascriptvue]": {
+        "editor.formatOnSave": false,
+    },
+    "[ejs]": {
+        "editor.formatOnSave": false,
+    },
+    "eslint.enable": true,
+    "svg.preview.background": "white",
+    "todo-tree.filtering.includeGlobs": [
+        "!**/node_modules",
+        "!**/.vscode"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "vetur.format.defaultFormatter.css": "none",
+    "vetur.format.defaultFormatter.js": "none",
+    "vetur.format.defaultFormatter.less": "none",
+    "vetur.format.options.tabSize": 4,
+    "eslint.validate": [
+        "vue"
+    ],
+    "vetur.format.defaultFormatter.html": "none"
+}
