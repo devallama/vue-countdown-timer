@@ -1,0 +1,34 @@
+{
+    "recommendations": [
+        // Debugger for Chrome
+        "msjsdiag.debugger-for-chrome",
+        // ESLint
+        "dbaeumer.vscode-eslint",
+        // Git Branch Warnings
+        "teledemic.branch-warnings",
+        // Git History
+        "donjayamanne.githistory",
+        // GitLens - Git supercharged
+        "eamodio.gitlens",
+        // IntelliSense for CSS class names
+        "zignd.html-css-class-completion",
+        // Jest
+        "orta.vscode-jest",
+        // markdownlint
+        "davidanson.vscode-markdownlint",
+        // npm Intellisense
+        "christian-kohler.npm-intellisense",
+        // Path Intellisense
+        "christian-kohler.path-intellisense",
+        // px to rem
+        "sainoba.px-to-rem",
+        // stylelint
+        "shinnn.stylelint",
+        // Todo Tree
+        "gruntfuggly.todo-tree",
+        // Vetur
+        "octref.vetur",
+        // vue
+        "jcbuisson.vue"
+    ]
+}
