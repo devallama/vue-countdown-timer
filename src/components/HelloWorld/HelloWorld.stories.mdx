@@ -1,0 +1,17 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import HelloWorld from './HelloWorld';
+
+<Meta title="Addon|Docs" />
+
+# Hello World component
+
+Look ma! Vue in MDX!
+
+<Preview>
+    <Story name="HelloWorld">
+        {{
+            components: { HelloWorld },
+            template: '<HelloWorld msg="Welcome to Your Vue.js App" />'
+        }}
+    </Story>
+</Preview>
