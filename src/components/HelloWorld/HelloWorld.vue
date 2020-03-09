@@ -119,7 +119,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss">
+    .hello {
+        background-color: $theme_primary;
+    }
+
     h3 {
         margin: 2.5rem 0 0;
     }
