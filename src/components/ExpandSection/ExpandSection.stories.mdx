@@ -1,0 +1,23 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import ExpandSection from './ExpandSection';
+
+<Meta title="Components|ExpandSection" />
+
+# ExpandSection
+
+ExpandSection component for the page
+
+<Preview>
+    <Story name="default">
+        {{
+            components: { ExpandSection },
+            template: `
+                <div style="padding-top: 10rem; background-color: lightGrey;">
+                    <ExpandSection>
+                        This is the content
+                    </ExpandSection>
+                </div>
+            `
+        }}
+    </Story>
+</Preview>
