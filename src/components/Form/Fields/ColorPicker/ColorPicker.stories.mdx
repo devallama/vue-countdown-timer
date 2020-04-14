@@ -1,0 +1,43 @@
+import { Story, Preview, Props, Meta } from '@storybook/addon-docs/blocks';
+import ColorPicker from './ColorPicker';
+
+export const Container = `<div style="max-width: 50rem; margin: 3rem auto;">`;
+export const ContainerEnd = `</div>`;
+
+<Meta title="Components/Form/Fields/ColorPicker" />
+
+# ColorPicker component
+
+## Props
+
+<Props of={ColorPicker} />
+
+## Stories
+
+#### Default
+
+<Preview>
+    <Story name="default">
+        {{
+            components: { ColorPicker },
+            template: `${Container}<ColorPicker />${ContainerEnd}`
+        }}
+    </Story>
+</Preview>
+
+#### Required
+
+<Preview>
+    <Story name="required">
+        {{
+            components: { ColorPicker },
+            template: `
+                ${Container}
+                    <ColorPicker 
+                        required="true"
+                    />
+                ${ContainerEnd}
+            `
+        }}
+    </Story>
+</Preview>
