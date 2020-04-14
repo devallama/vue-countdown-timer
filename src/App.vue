@@ -1,31 +1,22 @@
 <template>
-    <div id="app">
-        <img
-            alt="Vue logo"
-            src="./assets/logo.png"
-        >
-        <HelloWorld msg="Welcome to Your Vue.js App" />
-    </div>
+    <Global id="app">
+        <slot />
+    </Global>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld/HelloWorld.vue';
+import Global from './global/Global';
 
 export default {
     name: 'App',
     components: {
-        HelloWorld
+        Global
     }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     #app {
-        font-family: Avenir, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-        margin-top: 3.75rem;
+        background-color: $theme_secondary;
     }
 </style>
