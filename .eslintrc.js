@@ -31,8 +31,13 @@ module.exports = {
         },
     },
     rules: {
+        "array-bracket-spacing": [2, "never"],
         'arrow-body-style': [2, 'as-needed'],
         'arrow-parens': [2, 'as-needed'],
+        "arrow-spacing": [2, {
+            "before": true,
+            "after": true
+        }],
         'babel/no-invalid-this': 1,
         'babel/valid-typeof': 2,
         'brace-style': [2, '1tbs', { 
@@ -47,6 +52,11 @@ module.exports = {
             'ignoredNodes': ['TemplateLiteral > *']
         }],
         'jsx-quotes': [2, 'prefer-double'],
+        "key-spacing": [2, {
+            afterColon: true,
+            beforeColon: false,
+            mode: "strict"
+        }],
         'keyword-spacing': [2, {
             'before': true
         }],
@@ -66,6 +76,10 @@ module.exports = {
         'no-console': [1, {
             'allow': ['error', 'info', 'warn'],
         }],
+        "no-multi-spaces": 2,
+        "no-multiple-empty-lines": [2, {
+            "max": 1
+        }],
         'no-prototype-builtins': 0,
         'no-unused-expressions': [2, { 
             'allowTernary': true, 
@@ -74,11 +88,14 @@ module.exports = {
         'node/no-unpublished-require': 0,
         'node/no-unsupported-features/es-syntax': 0,
         'object-curly-spacing': [2, 'always'],
+        "padded-blocks": [2, "never"],
         'quotes': [2, 'single', {
             'avoidEscape': true,
             'allowTemplateLiterals': true
         }],
         'semi': [2, 'always'],
+        "space-before-blocks": 2,
+        "space-infix-ops": 2,
         'vue/html-indent': [2, 4]
     },
     overrides: [{
