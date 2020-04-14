@@ -50,17 +50,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .input {
-        font-size: 1.0625rem;
-        font-weight: 300;
-        padding: 1rem;
-        border: 0.0625rem solid $theme_primary;
-        border-radius: 0.125rem;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.6);
-
-        &.hasError {
-            border-color: red;
-        }
-    }
+    @import '../_field.base.scss';
 </style>
