@@ -1,0 +1,96 @@
+import { Story, Preview, Props, Meta } from '@storybook/addon-docs/blocks';
+import Input from './Input';
+
+export const Container = `<div style="max-width: 50rem; margin: 3rem auto;">`;
+export const ContainerEnd = `</div>`;
+
+<Meta title="Components|Form|Fields|Input" />
+
+# Input component
+
+## Props
+
+<Props of={Input} />
+
+## Stories
+
+#### Default
+
+<Preview>
+    <Story name="default">
+        {{
+            components: { Input },
+            template: `${Container}<Input />${ContainerEnd}`
+        }}
+    </Story>
+</Preview>
+
+#### Required
+
+<Preview>
+    <Story name="required">
+        {{
+            components: { Input },
+            template: `
+                ${Container}
+                    <Input 
+                        required="true"
+                    />
+                ${ContainerEnd}
+            `
+        }}
+    </Story>
+</Preview>
+
+### Types
+
+#### Text
+
+<Preview>
+    <Story name="type: text">
+        {{
+            components: { Input },
+            template: `
+                ${Container}
+                    <Input 
+                        type="text"
+                    />
+                ${ContainerEnd}
+            `
+        }}
+    </Story>
+</Preview>
+
+#### Date
+
+<Preview>
+    <Story name="type: date">
+        {{
+            components: { Input },
+            template: `
+                ${Container}
+                    <Input 
+                        type="date"
+                    />
+                ${ContainerEnd}
+            `
+        }}
+    </Story>
+</Preview>
+
+#### Time
+
+<Preview>
+    <Story name="type: time">
+        {{
+            components: { Input },
+            template: `
+                ${Container}
+                    <Input 
+                        type="time"
+                    />
+                ${ContainerEnd}
+            `
+        }}
+    </Story>
+</Preview>
