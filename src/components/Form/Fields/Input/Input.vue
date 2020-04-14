@@ -1,5 +1,6 @@
 <template>
     <input
+        v-model="value"
         class="input"
         :class="{ hasError }"
         :type="type"
