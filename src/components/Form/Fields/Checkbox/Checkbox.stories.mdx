@@ -1,0 +1,28 @@
+import { Story, Preview, Props, Meta } from '@storybook/addon-docs/blocks';
+import Checkbox from './Checkbox';
+
+export const Container = `<div style="max-width: 50rem; margin: 3rem auto;">`;
+export const ContainerEnd = `</div>`;
+
+<Meta title="Components/Form/Fields/Checkbox" />
+
+# Checkbox component
+
+## Props
+
+<Props of={Checkbox} />
+
+## Stories
+
+#### Default
+
+<Preview>
+    <Story name="default">
+        {{
+            components: { Checkbox },
+            template: `${Container}
+                <Checkbox name="checkbox" label="Checkbox" value="checkbox" />
+            ${ContainerEnd}`
+        }}
+    </Story>
+</Preview>
