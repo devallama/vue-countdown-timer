@@ -2,6 +2,9 @@
     "extends": [
         "stylelint-config-recommended"
     ],
+    "plugins": [
+        "stylelint-scss"
+    ],
     "ignoreFiles": [
         "**/*.js"
     ],
@@ -44,6 +47,7 @@
         "unit-blacklist": [
             "px"
         ],
+        "at-rule-no-unknown": null,
         "at-rule-empty-line-before": [
             "always",
             {
