@@ -1,0 +1,13 @@
+@function svgIcon($iconName, $variant) {
+    $baseURL: '/assets/icons/svg/';
+    $iconPath: $baseURL + $iconName + '/' + $iconName;
+
+    @if $variant {
+        @return $iconPath + '-' + $variant + '.svg';
+    } 
+
+    @else 
+    {
+        @return $iconPath + '.svg';
+    }
+}
